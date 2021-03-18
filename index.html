@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Marvel Quiz</title>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	 crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.0/underscore-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+	 crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script>
+	<script src="script.js" defer>
+	</script>
+</head>
+
+<body>
+	<header class="display-2 text-center p-5">
+		Superhero Quiz
+	</header>
+
+  <br>
+
+	<main class="d-flex align-items-center flex-column">
+		<img id="heroPic" src="">
+      
+      <h2>What is the real name of this superhero?</h2>
+      <select id="dropdown"> 
+        <option> Select One </option>
+        <!-- Placeholder -->
+      </select>
+
+      <h2 id="ans1"></h2>
+
+      <br>
+      
+      <h2 id="question2"></h2>
+    
+      <div id="options"> 
+           <!-- buttons are going to go here -->
+      </div>
+
+      <h2 id="ans2"></h2>
+
+      <br>
+      
+      <button id="submit" class="btn btn-outline-primary" onclick="swapButtons()">Check Answers</button>
+      <button id="villains" class="btn btn-primary" style="display: none;" onclick = "showVillains()">Show Villains</button>
+      
+      <br>
+
+      <div id="someDiv"></div>
+    </main>
+  </body>
+</html>
